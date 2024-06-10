@@ -24,3 +24,9 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
 }
+
+a.active {
+  font-weight: 900;
+  border-bottom-width: 4px;
+  letter-spacing: 2px;
+}
