@@ -6,7 +6,7 @@ import Images from "./components/Images";
 import useAxios from "./hooks/useAxios";
 import { useState } from "react";
 // import Navbar from "./components/Navbar";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import InfyImages from "./components/InfyImages";
 
 export const ImageContext = createContext();
