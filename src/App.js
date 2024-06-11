@@ -6,7 +6,7 @@ import Images from "./components/Images";
 import useAxios from "./hooks/useAxios";
 import { useState } from "react";
 // import Navbar from "./components/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import InfyImages from "./components/InfyImages";
 
 export const ImageContext = createContext();
@@ -97,7 +97,7 @@ function App() {
               path="/*"
               element={
                 <>
-                  <Header
+                  {/* <Header
                     // setQuery={setQuery}
                     // query={query}
                     search={search}
@@ -107,7 +107,8 @@ function App() {
                   ></Header>
                   <h1 className="text-xl my-5 ml-3 italic font-semibold animate-bounce ">
                     Click one of the above links
-                  </h1>
+                  </h1> */}
+                  <Navigate to={"/search"}></Navigate>
                 </>
               }
             ></Route>
