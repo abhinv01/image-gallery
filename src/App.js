@@ -95,7 +95,21 @@ function App() {
             ></Route>
             <Route
               path="/*"
-              element={<Navigate to="/search"></Navigate>}
+              element={
+                <>
+                  <Header
+                    // setQuery={setQuery}
+                    // query={query}
+                    search={search}
+                    setSearch={setSearch}
+                    handleClick={handleClick}
+                    handleEnter={handleEnter}
+                  ></Header>
+                  <h1 className="text-xl my-5 ml-3 italic font-semibold animate-bounce ">
+                    Click one of the above links
+                  </h1>
+                </>
+              }
             ></Route>
           </Routes>
         </BrowserRouter>
